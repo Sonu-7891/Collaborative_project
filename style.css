@@ -62,6 +62,7 @@ marquee{
 }
 .dropdown-content>div {
     height: 200px;
+    width: 1440px;
     display: grid;
    grid-template-columns: repeat(5, 160px);
    grid-template-rows: repeat(2, 70px);
@@ -94,7 +95,7 @@ marquee{
 .dropdown2{
 
     position: relative;
-    display: ruby-base;
+    
     background-color: rgb(37,37,37);
     color: white;
     padding: 2px;
@@ -112,22 +113,23 @@ marquee{
 .login-button{
     height: 40px;
     width: 200px;
-    
+    color: black;
     background-color: white;
 }
-.logo-button>a{
+.login-button>a{
     color: black;
+    font-size: 16px;
     text-decoration: none;
 }
 .dropdown-content2{
     display: none;
     position: absolute;
-    top: 40px;
+    top: 47px;
     right: 0px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     background-color: white;
     min-width: 300px;
-    height: 300px;
+    height: 260px;
     
 }
 .dropdown-content2>div>div:first-child {
@@ -142,9 +144,15 @@ marquee{
 p{
     padding-top: 15px;
 }
-.logo{
+.logo>div{
+    display: flex;
     color: black;
     font-size: 14px;
+    padding-left: 15px;
+}
+.logo>div>div{
+    padding: 15px;
+    font-family: sans-serif;
 }
 .dropdown2:hover .dropdown-content2 {
     display: block;
@@ -250,7 +258,7 @@ gap: 20px;
     text-align: center;
 }
 .shoes-card{
-    margin-top: 50px;
+    margin-top: 200px;
     margin-left: 20px;
     height: 570px;
     border-radius: 8px;
@@ -312,4 +320,203 @@ gap: 20px;
     height: 5px;
     width: 5px;
     background-color: green;
+}
+/* tablet screen */
+
+@media screen and (min-width:350px) and ( max-width:767px){
+    marquee{
+        background-color: black;
+        color: aqua;
+        height: 30px;
+        width: 767px;
+        padding-top: 8px;
+        /* position: fixed;
+        top: 0px; */
+    }
+    #nav1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+        font-family: sans-serif;
+        margin-top: -5px;
+        height: 55px;
+        width: 767px;
+        background-color: rgb(37,37,37);
+        color: white;
+    }
+    .dropdown-content>div {
+        height: 400px;
+        width: 767px;
+        display: grid;
+       grid-template-columns: repeat(3, 160px);
+       grid-template-rows: repeat(3, 70px);
+       gap: 10px;
+    }
+    .dropdown2{
+        display: none;
+    }
+    #shoes-content{
+        width: 398px;
+        height: 2400px;
+        display: grid;
+        
+        grid-template-columns: 340px 340px ;
+        grid-template-rows: 570px 570px  ;
+        gap: 20px;
+        }
+        .shoes-card{
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+        .dropbtn {
+            background-color: rgb(37,37,37);
+            color: white;
+            width: 150px;
+            padding: 1px;
+            font-size: 10px;
+            border: none;
+        }
+   
+    .DELIVERY{
+        display: none;
+    }
+    .searchbar{
+        display: none;
+        
+        }
+        input{
+            border: none;
+        }
+        #DELIVERYbtn{
+            display: none;
+        
+        }
+        .ab-img{
+            display: none;
+        }
+        .reebok-nav-img{
+           position: relative;
+           left: 600px;
+           top: 10px;
+           height: 15px;
+           width: 100px;
+        }
+        .menubar{
+            position: relative;
+            left: 10px;
+            margin-left: -150px;
+            padding-left: 1px;
+            font-size: 12px;
+        }
+        #reebok-nav{
+        
+            height: 60px;
+            width: 767px;
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        
+        }
+        
+        .nav-div{
+            color: rgb(37,37,37);
+        }
+}
+/* mobile screen */
+@media screen and (min-width:150px) and ( max-width:349px) {
+    marquee{
+        background-color: black;
+        color: aqua;
+        height: 30px;
+        width: 399px;
+        padding-top: 8px;
+        /* position: fixed;
+        top: 0px; */
+    }
+    #nav1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+        font-family: sans-serif;
+        margin-top: -5px;
+        height: 55px;
+        width: 399px;
+        background-color: rgb(37,37,37);
+        color: white;
+    }
+    .dropdown-content>div {
+        height: 400px;
+        width: 399px;
+        display: grid;
+       grid-template-columns: repeat(3, 160px);
+       grid-template-rows: repeat(3, 70px);
+       gap: 10px;
+    }
+    .dropdown2{
+        display: none;
+    }
+    #shoes-content{
+        width: 398px;
+        height: 2400px;
+        display: grid;
+        
+        grid-template-columns: 340px  ;
+        grid-template-rows: 570px 570px 570px 570px ;
+        gap: 20px;
+        }
+        .shoes-card{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .dropbtn {
+            background-color: rgb(37,37,37);
+            color: white;
+            width: 150px;
+            padding: 1px;
+            font-size: 10px;
+            border: none;
+        }
+   
+    .DELIVERY{
+        display: none;
+    }
+    .searchbar{
+        display: none;
+        
+        }
+        input{
+            border: none;
+        }
+        #DELIVERYbtn{
+            display: none;
+        
+        }
+        .ab-img{
+            display: none;
+        }
+        .reebok-nav-img{
+          height: 10px;
+          width: 70px;
+          position: relative;
+          top: 15px;
+          left: 110px;
+        }
+        .menubar{
+            
+
+            margin-left: -130px;
+            padding-left: -10px;
+            font-size: 12px;
+        }
+        #reebok-nav{
+            height: 60px;
+            width: 399px;
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        
+        }
+        .nav-div{
+            color: rgb(37,37,37);
+        }
 }
