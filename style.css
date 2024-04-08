@@ -3,7 +3,7 @@ marquee{
     background-color: black;
     color: aqua;
     height: 30px;
-    width: 100%;
+    width: 1440px;
     padding-top: 8px;
     /* position: fixed;
     top: 0px; */
@@ -12,14 +12,13 @@ marquee{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
+    font-size: 19px;
+    font-family: sans-serif;
     margin-top: -5px;
-    height: 50px;
-    width: 1490px;
+    height: 55px;
+    width: 1440px;
     background-color: rgb(37,37,37);
     color: white;
-    /* position: fixed;
-    top: 40px; */
 }
 .nav-div{
     padding-right: 10px;
@@ -36,6 +35,7 @@ marquee{
     justify-content: center;
     align-items: center;
 }
+/* more brands dropdown */
 .dropbtn {
     background-color: rgb(37,37,37);
     color: white;
@@ -90,7 +90,7 @@ marquee{
     background-color: rgb(77, 76, 76);
 }
 
-
+/* log in button dropdown */
 .dropdown2{
 
     position: relative;
@@ -107,6 +107,7 @@ marquee{
     background-color: rgb(37,37,37);
     color: white;
     border: none;
+    font-size: 19px;
 }
 .login-button{
     height: 40px;
@@ -133,13 +134,13 @@ marquee{
     background-color: rgb(12,35,64);
     height: 130px;
     width: 100%;
-   margin-top: -10px;
+   margin-top: -15px;
     font-size: 13px;
     text-align: center;
 
 }
 p{
-    padding-top: 10px;
+    padding-top: 15px;
 }
 .logo{
     color: black;
@@ -159,56 +160,156 @@ p{
 h5{
     padding-left: 50px;
 }
-#new:hover{
-    display: block;
-}
+/*  2nd nav bar */
 #reebok-nav{
-    height: 50px;
-    width: 100%;
+    height: 60px;
+    width: 1440px;
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
 }
 .reebok-nav-img{
     width: 200px;
     height: 45px;
-    margin: 10px 0px 10px 100px;
+    margin: 10px 0px 10px 50px;
 }
-.new-drpdwn{
+
+/* 2nd nav content */
+.menubar{
     font-size: 20px;
-    margin: auto;
-    text-align: center;
-    display: inline-block;
-    
+    color: black;
+    margin-top: 20px;
 }
-.new-drpdwn-content{
-    display: none;
-    position: absolute;
-    top: 160px;
-    right: 0px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-    background-color: white;
-    width: 100%;
-    height: 400px;
-}
-.list1{
-   
-    width: 200px;
-    height: 200px;
-    font-size: 16PX;
-    text-decoration: none;
-}
-ul{
-    list-style-type: none;
-    
-}
-.new-drpdwn-content{
+.menubar>a{
     text-align: center;
     text-decoration: none;
-}
-.new-drpdwn:hover{
-    display:block;
-    text-decoration: underline red 2px;
-}
-.new-drpdwn:hover, .new-drpdwn-content{
-    display: block;
+    color: black;
+    padding-left: 30px;
     
+}
+span{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.searchbar{
+display: flex;
+height: 50px;
+width: 150px;
+margin-top: 5px;
+margin-left: 20px;
+border-bottom: 1px solid rgba(128, 128, 128, 0.319);
+}
+input{
+    border: none;
+}
+#DELIVERYbtn{
+background-color: rgb(196,12,47);
+color: white;
+width: 200px;
+height: 50px;
+display: flex;
+border: none;
+margin-top: 5px;
+border-radius: 50px;
+
+}
+.DELIVERY{
+    padding-left: 20px;
+}
+#DELIVERYbtn>div>div{
+    padding: 0px;
+    margin: -10px;
+    margin-left: -60px;
+    font-size: 10px;
+}
+h3{
+    font-size: 12px;
+}
+#DELIVERYbtn>div>span{
+    padding: 10px;
+}
+/* shoes content cards */
+#shoes-content{
+width: 1440px;
+height: 800px;
+display: grid;
+
+grid-template-columns: 340px 340px 340px 340px;
+grid-template-rows: 570px;
+gap: 20px;
+}
+.TEXT{
+    background: radial-gradient(rgb(168, 245, 168) , rgb(63, 132, 63));
+    color: white;
+    width: 120px;
+    height: 20px;
+    position: relative;
+    TOP: 30px;
+    font-family: sans-serif;
+    padding-top: 2px;
+    text-align: center;
+}
+.shoes-card{
+    margin-top: 50px;
+    margin-left: 20px;
+    height: 570px;
+    border-radius: 8px;
+    width: 340px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.img-item1{
+    position: relative;
+    top: -420px;
+    left: 300px;
+    height: 30px;
+    width: 30px;
+}
+.img-item2{
+    position: relative;
+    top: 420px;
+    left: 290px;
+}
+.img-item3{
+    
+    height: 450px;
+    width: 340px;
+    border-radius: 10px;
+    margin-top: -85px;
+}
+.shoes-content-bottom{
+    margin-left: 20px;
+    margin-top: -10px;
+    height: 100px;
+}
+.shoes-content-bottom>p{
+    padding-top: 0px;
+    margin-top: -10PX;
+
+}
+.shoes-content-bottom>h2{
+    padding-top: 0px;
+    margin-top: -10PX;
+}
+#support-btn{
+    position: fixed;
+    top: 600px;
+
+    left: 1350px;
+    border: none;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+#support-btn>img{
+    
+    border-radius: 50px;
+    height: 50px;
+    width: 40px;
+}
+
+.green{
+    height: 5px;
+    width: 5px;
+    background-color: green;
 }
